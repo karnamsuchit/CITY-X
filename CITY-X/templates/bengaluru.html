@@ -1,0 +1,416 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+
+<link href="{% static 'css/style.css' %}" rel="stylesheet" />
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+  <div class="container py-5">
+    <div class="row justify-content-center py-5">
+      <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Welcome to Bengaluru</h1>
+        <p class="fs-4 text-white mb-4 animated slideInDown">Guiding You Every Step of Your Journey</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+        <div class="position-relative h-100">
+          <img class="img-fluid position-absolute w-100 h-100" src="{% static 'images/destination-4.jpg' %}" alt=""
+            style="object-fit: cover;" />
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+        <h1 class="mb-4">Welcome to <span class="text-primary">Bengaluru</span></h1>
+        <p class="mb-4">Bengaluru, also known as Bangalore, is the capital of Karnataka in southern India. Renowned as
+          the "Silicon Valley of India," it is a major IT hub with a thriving tech industry and numerous startups.
+          Founded in 1537 by Kempe Gowda, the city combines a rich historical heritage with modern advancements.
+          Landmarks like Bangalore Palace and Vidhana Soudha highlight its cultural significance.
+
+          Bengaluru is known for its pleasant climate, green spaces, and cosmopolitan culture, attracting people from
+          across India and the world. It hosts prestigious institutions like the Indian Institute of Science (IISc) and
+          Indian Institute of Management Bangalore (IIMB), contributing to its reputation as an educational center.
+
+          The city offers a diverse culinary scene and vibrant nightlife, along with shopping districts like MG Road.
+          While rapid urbanization brings challenges such as traffic congestion and pollution, Bengaluru remains a
+          dynamic and influential city, driving India's technological and economic growth.</p>
+
+        <div class="row gy-2 gx-4 mb-4">
+          <div class="col-sm-6">
+            <p class="mb-0"></p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0"></p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0"></p>
+          </div>
+
+          <div class="col-sm-6">
+            <p class="mb-0"></p>
+          </div>
+        </div>
+        {% comment %} <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> {% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-xxl py-5 destination">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">Gallary</h6>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-7 col-md-6">
+        <div class="row g-3">
+          <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+            <a class="position-relative d-block overflow-hidden" href=""><img class="img-fluid"
+                src="{% static 'images/bengaluru.jpg' %}" alt="" /></a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+            <a class="position-relative d-block overflow-hidden" href=""><img class="img-fluid"
+                src="{% static 'images/bengaluru-2.jpg' %}" alt="" /></a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+            <a class="position-relative d-block overflow-hidden" href="">
+              <img class="img-fluid" src="{% static 'images/bengaluru-3.jpg' %}" alt="" />
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+        <a class="position-relative d-block h-100 overflow-hidden" href=""><img
+            class="img-fluid position-absolute w-100 h-100" src="{% static 'images/bengaluru-4.jpg' %}" alt=""
+            style="object-fit: cover;" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">Places</h6>
+      <h1 class="mb-5">Places To Visit</h1>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="package-item">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'images/bengaluru.jpg' %}" alt="" />
+          </div>
+          <div class="d-flex border-bottom">
+            <small class="flex-fill text-center border-end py-2"><i
+                class="fa fa-map-marker-alt text-primary me-2"></i>Lal Bagh Botanical Garden</small>
+          </div>
+          <div class="text-center p-4">
+            <h3 class="mb-0">₹1200.00</h3>
+            <div class="mb-3">
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+            </div>
+            <p>A Green Oasis in the Heart of Bangalore Lal Bagh Botanical Garden, located in Bangalore, Karnataka, is a
+              renowned botanical garden and a major tourist attraction. Spanning over 240 acres, the garden is home to
+              an extensive collection of flora and boasts several historical and architectural features. It is a haven
+              for nature lovers, botanists, and tourists looking to enjoy a serene environment amidst the hustle and
+              bustle of the city. Here’s a comprehensive guide to help tourists make the most of their visit to Lal Bagh
+              Botanical Garden.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="package-item">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'images/bengaluru-3.jpg' %}" alt="" />
+          </div>
+          <div class="d-flex border-bottom">
+            <small class="flex-fill text-center border-end py-2"><i
+                class="fa fa-map-marker-alt text-primary me-2"></i>Bangalore Palace</small>
+          </div>
+          <div class="text-center p-4">
+            <h3 class="mb-0">₹1500.00</h3>
+            <div class="mb-3">
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+            </div>
+            <p>A Regal Journey Through History Bangalore Palace, an iconic landmark in the heart of Bangalore, is a
+              stunning example of Tudor-style architecture and a symbol of the city’s royal heritage. Built in the late
+              19th century, the palace offers a glimpse into the opulent lifestyle of the Wodeyar dynasty and serves as
+              a major tourist attraction. Here’s a comprehensive guide to help tourists appreciate and explore Bangalore
+              Palace.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="package-item">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'images/bengaluru-2.jpg' %}" alt="" />
+          </div>
+          <div class="d-flex border-bottom">
+            <small class="flex-fill text-center border-end py-2"><i
+                class="fa fa-map-marker-alt text-primary me-2"></i>Nandi Hills</small>
+          </div>
+          <div class="text-center p-4">
+            <h3 class="mb-0">₹1800.00</h3>
+            <div class="mb-3">
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+            </div>
+            <p>A Scenic Retreat Near Bangalore Nandi Hills, also known as Nandidurg or Nandi Betta, is a popular hill
+              station located about 60 kilometers north of Bangalore in Karnataka, India. Situated at an altitude of
+              approximately 1,478 meters above sea level, Nandi Hills is renowned for its breathtaking views, pleasant
+              climate, and historical significance. Here’s a comprehensive guide to help tourists make the most of their
+              visit to Nandi Hills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% comment %} <div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+      <h1 class="mb-5">3 Easy Steps</h1>
+    </div>
+    <div class="row gy-5 gx-4 justify-content-center">
+      <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="position-relative border border-primary pt-5 pb-4 px-4">
+          <div
+            class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+            style="width: 100px; height: 100px;">
+            <i class="fa fa-globe fa-3x text-white"></i>
+          </div>
+          <h5 class="mt-4">Choose A Destination</h5>
+          <hr class="w-25 mx-auto bg-primary mb-1" />
+          <hr class="w-50 mx-auto bg-primary mt-0" />
+          <p class="mb-0">Discover and select from a wide array of captivating destinations tailored to your interests
+            and travel goals.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="position-relative border border-primary pt-5 pb-4 px-4">
+          <div
+            class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+            style="width: 100px; height: 100px;">
+            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+          </div>
+          <h5 class="mt-4">Pay Online</h5>
+          <hr class="w-25 mx-auto bg-primary mb-1" />
+          <hr class="w-50 mx-auto bg-primary mt-0" />
+          <p class="mb-0">Enjoy a seamless and secure online payment process, ensuring your booking is confirmed without
+            any hassle.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="position-relative border border-primary pt-5 pb-4 px-4">
+          <div
+            class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+            style="width: 100px; height: 100px;">
+            <i class="fa fa-user fa-3x text-white"></i>
+          </div>
+          <h5 class="mt-4">Book A Guide</h5>
+          <hr class="w-25 mx-auto bg-primary mb-1" />
+          <hr class="w-50 mx-auto bg-primary mt-0" />
+          <p class="mb-0">Easily book a knowledgeable local guide to enrich your travel experience with authentic
+            insights and personalized tours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
+
+{% comment %} <div class="container-l py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+      <h1 class="mb-5">Meet Our Guide</h1>
+    </div>
+    <div class="row g-3" style="gap: 125px;">
+      <div class="col-lg-3 col-md-6 wow fadeInUp" style="border-radius: 20px;" data-wow-delay="0.1s">
+        <div class="team-item">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="images/team-1.jpg" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">V Tushar</h5>
+            <small>3 years - 4years of exprience</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="team-item">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="images/team-3.jpg" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Barun Aditya JS</h5>
+            <small>4 years of exprience</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="team-item">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'images/person.jpeg' %}" style="width: 920px;" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Venu</h5>
+            <small>3 years of exprience</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
+<div class="container">
+  <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+    <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+    <h1 class="mb-5">Meet Our Guide From Bengaluru</h1>
+  </div>
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="package-item">
+        <div class="overflow-hidden">
+          <img class="img-fluid" src="{% static 'images/person.jpeg' %}" alt="" />
+        </div>
+        <div class="d-flex border-bottom">
+          <small class="flex-fill text-center border-end py-2"><i
+              class="fa fa-person text-primary me-2"></i>Venu</small>
+        </div>
+        <div class="text-center p-4">
+          <h3 class="mb-0" id="prize">₹1200.00</h3>
+          <div class="mb-3">
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+          </div>
+
+          <div class="d-flex justify-content-center mb-2">
+            <input id="form-button" class="btn btn-success btn-block" type="submit" value="book" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="package-item">
+        <div class="overflow-hidden">
+          <img class="img-fluid" src="{% static 'images/person-2.jpg' %}" style="height:425px; width:425px" alt="" />
+        </div>
+        <div class="d-flex border-bottom">
+          <small class="flex-fill text-center border-end py-2"><i
+              class="fa fa-person text-primary me-2"></i>Ukarsh</small>
+        </div>
+        <div class="text-center p-4">
+          <h3 class="mb-0" id="prize">₹1500.00</h3>
+          <div class="mb-3">
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+          </div>
+          <div class="d-flex justify-content-center mb-2">
+            <input id="form-button" class="btn btn-success btn-block" type="submit" value="book" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+      <div class="package-item">
+        <div class="overflow-hidden">
+          <img class="img-fluid" src="{% static 'images/person-3.jpg' %}" style="height:425px; width:425px" alt="" />
+        </div>
+        <div class="d-flex border-bottom">
+          <small class="flex-fill text-center border-end py-2"><i
+              class="fa fa-person text-primary me-2"></i>Archana</small>
+        </div>
+        <div class="text-center p-4">
+          <h3 class="mb-0" id="prize">₹1800.00</h3>
+          <div class="mb-3">
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+            <small class="fa fa-star text-primary"></small>
+          </div>
+          <input id="form-button" class="btn btn-success btn-block" type="submit" value="book" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="text-center">
+      <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+      <h1 class="mb-5">Our Clients Say!!!</h1>
+    </div>
+    <div class="owl-carousel testimonial-carousel position-relative">
+      <div class="testimonial-item bg-white text-center border p-4">
+        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'images/team-4.jpg' %}"
+          style="width: 200px; height: 200px;" />
+        <h5 class="mb-0">V Tushar</h5>
+        <p>Karnataka, Bengaluru</p>
+        <p class="mb-0">Absolutely fantastic! The app made booking a local guide so easy and our tour was unforgettable.
+        </p>
+      </div>
+
+      <div class="testimonial-item bg-white text-center border p-4">
+        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'images/team-2.jpg' %}"
+          style="width: 200px; height: 200px;" />
+        <h5 class="mb-0">Barun Aditya JS</h5>
+        <p>Karnataka, Udupi</p>
+        <p class="mt-2 mb-0">Superb service! The guides were knowledgeable and friendly, making our trip truly special.
+        </p>
+      </div>
+      <div class="testimonial-item bg-white text-center border p-4">
+        <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'images/team-3.jpg' %}"
+          style="width: 200px; height: 200px;" />
+        <h5 class="mb-0">CH Poojitha</h5>
+        <p>Karnataka, Kolar</p>
+        <p class="mt-2 mb-0">This app is a game-changer. Quick, reliable, and connected us with amazing guides who
+          enriched our travel experience.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

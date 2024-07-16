@@ -1,0 +1,119 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+  <div class="container py-5">
+    <div class="row justify-content-center py-5">
+      <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">
+          Enhance Your Expience
+        </h1>
+        <p class="fs-4 text-white mb-4 animated slideInDown">
+          Guiding You Every Step of Your Journey
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+        <div class="position-relative h-100">
+          <img class="img-fluid position-absolute w-100 h-100" src="{{ reg_Guide.photo.url }}" alt=""
+            style="object-fit: cover; border-radius:20px" />
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <h1 class="mb-4">
+          Hello!! I Am <span class="text-primary">{{ reg_Guide.name }}</span>
+        </h1>
+        <p class="mb-4" style=" overflow-wrap: break-word;">{{reg_Guide.description}}</p>
+
+
+        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Book </a> -->
+        <button class="btn btn-primary py-2 px-5 mt-2" onclick="showPayPal()"
+          style="border-radius: 10px; font-weight:600">Book</button><br>
+        <div class="payPalDiv" id="paypal-button-container"></div>
+
+        <!-- button funtion -->
+        <script>
+          function showPayPal() {
+            console.log("button is clicked");
+            var T = document.getElementsByClassName("payPalDiv")[0];
+            console.log(T.style.display)
+            if (T) {
+              if (T.style.display === "") {
+                T.style.display = "block";
+              } else if (T.style.display === "none") {
+                T.style.display = "block";
+              } else {
+                T.style.display = "none";
+              }
+            } else {
+              console.error('PayPal container element not found.');
+            }
+          }
+        </script>
+
+        <style>
+          .payPalDiv {
+            display: none;
+            margin-top: 20px;
+          }
+        </style>
+        <!-- button funtion -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Include the PayPal JavaScript SDK -->
+        <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+        <script>
+          var price = "{{ reg_Guide.price }}";
+          // Render the PayPal button into #paypal-button-container
+          paypal
+            .Buttons({
+              // Call your server to set up the transaction
+              createOrder: function (data, actions) {
+                return actions.order.create({
+                  purchase_units: [
+                    {
+                      amount: {
+                        value: parseFloat(price).toFixed(2),
+                      },
+                    },
+                  ],
+                });
+              },
+
+              // Call your server to finalize the transaction
+              onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                  aleart(
+                    "Transaction Completed by" +
+                    details.payer.name.given_name +
+                    "!"
+                  );
+                });
+              },
+            })
+            .render("#paypal-button-container");
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
